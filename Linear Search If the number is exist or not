@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.lang.System;
-class linearsearch
+class Main
 {
     public static void main(String args[])
     {

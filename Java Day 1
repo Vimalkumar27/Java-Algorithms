@@ -107,5 +107,21 @@ public static void main(String args[])
     System.out.println(f);
 }
 }
- 
+
+//Reverse a Number
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=n;i>0;i=i/10){
+            sum=sum*10+(i%10);
+        }
+        System.out.println(sum);
+        
+       
+    }
+}
 

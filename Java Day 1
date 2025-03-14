@@ -1,0 +1,111 @@
+//Armstrong Number
+
+import java.util.*;
+import java.lang.Math;
+public class Main
+{
+    public static void main (String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count =0;
+        while(n>0)
+        {
+            count++;
+            n=n/10;
+        }
+        double sum=0;
+        System.out.println(count);
+        while(n>0)
+        {
+            n=n%10;
+            double a =Math.pow(n,count);
+            sum=sum+a;
+            n=n/10;
+            
+            }
+            System.out.println(sum);
+        
+    }
+}
+
+//Arithmetic Calculator
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the Num1 :");
+        double num1=sc.nextDouble();
+        System.out.println("Enter the operator +,-,*,/ :");
+        char op=sc.next().charAt(0);
+        System.out.println("Enter the Num2 :");
+        double num2=sc.nextDouble();
+        double cal=0;
+        switch(op)
+        {
+            case '+':
+                cal=num1+num2;
+                break;
+            case '-':
+                cal=num1-num2;
+                break;
+            case '*':
+                cal=num1*num2;
+                break;
+            case '/':
+                if(num2>0)
+                {
+                    cal=num1/num2;
+                }
+                else
+                {
+                    System.out.println("Number 2 must be greater than 0");
+                }
+                break;
+            default:
+                System.out.println("Invalid operation");
+                
+        }
+        System.out.println(cal);
+     }
+}
+
+//Count number of digits
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        for(int i=n;i>0;i=i/10)
+        {
+            count++;
+        }
+        System.out.println(count);
+    }
+}
+
+//Factorial of a Number 
+
+import java.util.Scanner;
+public class Main{
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int n =sc.nextInt();
+    int f =1;
+    for(int i=1;i<=n;i++)
+    {
+        f=f*i;
+    }
+    System.out.println(f);
+}
+}
+ 
+
